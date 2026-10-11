@@ -1,0 +1,146 @@
+/* ===== VARIABEL WARNA ===== */
+:root {
+  --moss: #839958;        
+  --beige: #f7f4d5;       
+  --teks: #1f2a14;        /* teks gelap agar terbaca */
+  --beige-gelap: #ece8bf; /* variasi beige untuk selang-seling bagian */
+}
+
+/* ===== UMUM ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 56px;
+  background-color: var(--beige);
+  color: var(--teks);
+}
+.bg-light {
+  background-color: var(--beige-gelap) !important;
+}
+.section-title {
+  color: var(--teks);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  background-color: var(--rosy);
+  border-radius: 2px;
+}
+
+/* ===== NAVBAR ===== */
+.bg-sekolah {
+  background-color: var(--moss);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--teks);
+  font-weight: 600;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+}
+
+/* ===== HERO ===== */
+#heroCarousel {
+  position: relative;
+}
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 5;
+  pointer-events: none;
+}
+.hero-text a {
+  pointer-events: auto;
+}
+.btn-aksen {
+  background-color: var(--rosy);
+  color: var(--teks);
+  font-weight: 600;
+  border: none;
+}
+.btn-aksen:hover {
+  background-color: var(--beige);
+  color: var(--teks);
+}
+
+/* ===== AKADEMIK ===== */
+.icon-akademik {
+  font-size: 3rem;
+  color: var(--rosy);
+}
+.card {
+  background-color: #fffdf0;
+  border: none;
+  box-shadow: 0 2px 10px rgba(31, 42, 20, 0.12);
+}
+
+/* ===== BERITA ===== */
+.berita-img {
+  height: 200px;
+  object-fit: cover;
+}
+.btn-sekolah {
+  background-color: var(--moss);
+  color: var(--teks);
+  font-weight: 600;
+}
+.btn-sekolah:hover {
+  background-color: var(--rosy);
+  color: var(--teks);
+}
+
+/* ===== GALERI ===== */
+.galeri-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(31, 42, 20, 0.15);
+}
+
+/* ===== FOOTER ===== */
+.footer-sekolah {
+  background-color: var(--moss);
+  color: var(--teks);
+}
+.footer-sekolah a {
+  color: var(--teks);
+}
+.footer-sekolah a:hover {
+  color: #fff;
+}
+
+/* ===== RESPONSIF HP ===== */
+@media (max-width: 576px) {
+  .hero-img {
+    height: 55vh;
+  }
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== GURU & STAF ===== */
+.icon-guru {
+  font-size: 4.5rem;
+  color: #d3968c;
+}
